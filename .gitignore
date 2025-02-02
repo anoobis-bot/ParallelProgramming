@@ -1,0 +1,9 @@
+data/
+Lib/
+Scripts/
+share/
+.idea/
+
+pyvenv.cfg
+plate_numbers.csv
+processing_stats.txt
