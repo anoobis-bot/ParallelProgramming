@@ -6,7 +6,7 @@ import threading
 import time
 
 # Set the path to the directory containing images
-image_directory = "path/to/your/images"
+image_directory = "data"
 output_csv = "plate_numbers.csv"
 output_stats = "processing_stats.txt"
 num_threads = 4  # Define the number of threads for parallel processing
