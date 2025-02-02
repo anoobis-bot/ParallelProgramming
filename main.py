@@ -96,6 +96,10 @@ def main():
         stats_file.write(f"Total number of plates identified: {num_identified}\n")
         stats_file.write(f"Total processing time (seconds): {total_time:.2f}\n")
 
+    print(f"Number of images processed: {num_processed}\n")
+    print(f"Total number of plates identified: {num_identified}\n")
+    print(f"Total processing time (seconds): {total_time:.2f}\n")
+
     print(f"CSV file '{output_csv}' and statistics file '{output_stats}' have been created.")
 
 
