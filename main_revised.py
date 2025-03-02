@@ -128,6 +128,7 @@ def main():
         f.write(f"Number of images processed: {num_processed}\n")
         f.write(f"Total number of plates identified: {num_identified}\n")
         f.write(f"Total processing time (seconds): {total_time:.2f}\n")
+        f.write(f"Remarks: ")
         f.write("--------------------------------\n\n")
     
     print(f"Processed {num_processed} images, identified {num_identified} plates in {total_time:.2f} seconds.")
