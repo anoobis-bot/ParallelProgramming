@@ -122,10 +122,12 @@ def main():
     
     num_processed = len(image_files)
     num_identified = sum(1 for _, plate in results if plate not in ["Plate not detected", "OCR returned empty"])
-    with open(output_stats, 'w') as f:
+    with open(output_stats, 'a') as f:
+        f.write(f"Start Time: {time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(start_time))}\n")
         f.write(f"Number of images processed: {num_processed}\n")
         f.write(f"Total number of plates identified: {num_identified}\n")
         f.write(f"Total processing time (seconds): {total_time:.2f}\n")
+        f.write("--------------------------------\n\n")
     
     print(f"Processed {num_processed} images, identified {num_identified} plates in {total_time:.2f} seconds.")
     print(f"Results saved to '{output_csv}' and stats saved to '{output_stats}'.")
