@@ -148,10 +148,12 @@ def main():
         worker.start()
         i = i + 1
 
-    while (len(results) < len(image_files)) :
-        if (not queue.empty()):
-            result = queue.get()
-            results.append(result)
+    with tqdm(total=len(image_files), desc='Processed image') as pbar:
+        while (len(results) < len(image_files)) :
+            if (not queue.empty()):
+                result = queue.get()
+                results.append(result)
+                pbar.update(1)
 
     for worker in processes:
         worker.join()
