@@ -103,10 +103,11 @@ def main():
         print(f"Downloaded YOLOv10b weights to: {weights_path}")
     model = YOLO(weights_path)
     print("Hybrid model loaded.")
-    
+
+    start_time = time.time()
+
     image_files = [os.path.join(image_directory, f) for f in os.listdir(image_directory) if f.lower().endswith(('png', 'jpg', 'jpeg'))]
     results = []
-    start_time = time.time()
     
     with ThreadPoolExecutor(max_workers=num_workers) as executor:
         futures = [executor.submit(process_image, image_path, model, debug_folder) for image_path in image_files]
