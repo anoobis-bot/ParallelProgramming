@@ -113,10 +113,10 @@ def distribute_images(images, n):
     return batches
 
 def main():
-    image_directory = "data"
+    image_directory = input("Enter absolute directory path to data: ")
+    num_workers = int(input("Enter Number of workers: "))
     output_csv = "plate_numbers_revised.csv"
     output_stats = "processing_stats_revised.txt"
-    num_workers = 4
     debug_folder = "debug"
     os.makedirs(debug_folder, exist_ok=True)
     
@@ -178,7 +178,7 @@ def main():
         f.write(f"Number of images processed: {num_processed}\n")
         f.write(f"Total number of plates identified: {num_identified}\n")
         f.write(f"Total processing time (seconds): {total_time:.2f}\n")
-        f.write(f"Remarks: Used domain decomposition with {num_workers} number of workers. Used multiprocessing and adding directly to queue\n")
+        f.write(f"Remarks: Used domain decomposition with {num_workers} number of workers. Used multiprocessing and no lock queues\n")
         f.write("--------------------------------\n\n")
     
     print(f"Processed {num_processed} images, identified {num_identified} plates in {total_time:.2f} seconds.")
