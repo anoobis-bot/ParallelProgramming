@@ -195,3 +195,45 @@ Total processing time (seconds): 146.22
 Remarks: Used domain decomposition with 4 number of workers. Used multiprocessing and adding directly to queue
 --------------------------------
 
+Start Time: 2025-03-02-14-22-39
+Number of images processed: 433
+Total number of plates identified: 251
+Total processing time (seconds): 148.91
+Remarks: Used domain decomposition with 8 number of workers
+--------------------------------
+
+Start Time: 2025-03-02-14-25-47
+Number of images processed: 433
+Total number of plates identified: 251
+Total processing time (seconds): 149.36
+Remarks: Used domain decomposition with 14 number of workers
+--------------------------------
+
+Start Time: 2025-03-03-00-11-03
+Number of images processed: 433
+Total number of plates identified: 251
+Total processing time (seconds): 148.38
+Remarks: Used domain decomposition with 4 number of workers. Used multiprocessing and adding directly to queue
+--------------------------------
+
+Start Time: 2025-03-03-19-07-46
+Number of images processed: 433
+Total number of plates identified: 251
+Total processing time (seconds): 135.10
+Remarks: Used domain decomposition with 4 number of workers. Used multiprocessing and no locks
+--------------------------------
+
+Start Time: 2025-03-03-19-10-10
+Number of images processed: 433
+Total number of plates identified: 251
+Total processing time (seconds): 136.28
+Remarks: Used domain decomposition with 4 number of workers. Used multiprocessing and no locks
+--------------------------------
+
+Start Time: 2025-03-03-19-12-44
+Number of images processed: 433
+Total number of plates identified: 251
+Total processing time (seconds): 134.43
+Remarks: Used domain decomposition with 4 number of workers. Used multiprocessing and no locks
+--------------------------------
+
